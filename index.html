@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GreenCity - Coffee Always</title>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="main.css" />
 
@@ -23,10 +24,16 @@
             </div>
             <div class="form-contact">
                 <h3>Vem tomar um café com a gente</h3>
+                <p>Sua mensage foi enviada com sucesso.</p>
                 <form>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="Email" />
-                    <textarea name="mensagem" id="mensage" placeholder="Mensagem"></textarea>
+                    <input type="text" placeholder="Nome" class="check-alert" id="name" />
+                    <input type="email" placeholder="Email" class="check-alert" id="email" />
+                    <textarea
+                        name="mensagem"
+                        id="mensage"
+                        placeholder="Mensagem"
+                        class="check-alert"
+                    ></textarea>
                     <button>Enviar</button>
                 </form>
             </div>
