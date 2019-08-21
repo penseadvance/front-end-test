@@ -126,7 +126,6 @@ main {
     background: transparent;
     outline: none;
     color: rgb(227, 59, 59);
-    /* display: none */
 }
 
 .form-contact form .input-nome .cancel > i,
@@ -397,7 +396,7 @@ footer {
         .form-contact form .input-nome > .mensagem-erro,
         .form-contact form .input-email > .mensagem-erro,
         .form-contact form .textarea-mensagem > .mensagem-erro {
-            left: 510px;
+            left: 735px;
         }
     }
 }

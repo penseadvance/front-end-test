@@ -24,45 +24,21 @@
             </div>
             <div class="form-contact">
                 <h3>Vem tomar um café com a gente</h3>
-                <p id="mensagem-sucesso"><em>Sua mensage foi enviada com sucesso.</em></p>
-                <form>
-                    <div class="input-nome">
-                        <input type="text" placeholder="Nome" class="check-alert" id="name" />
-                        <button class="cancel">
-                            <i class="fa fa-times-circle" aria-hidden="true"></i>
-                        </button>
 
-                        <div class="mensagem-erro">
-                            <span><i class="fa fa-caret-up" aria-hidden="true"></i></span>
-                            <p>Insira seu nome completo.</p>
-                        </div>
+                <form id="formulario">
+                    <div class="input-nome">
+                        <input type="text" placeholder="Nome" id="nome" name="nome" />
                     </div>
                     <div class="input-email">
-                        <input type="email" placeholder="Email" class="check-alert" id="email" />
-                        <button class="cancel">
-                            <i class="fa fa-times-circle" aria-hidden="true"></i>
-                        </button>
-
-                        <div class="mensagem-erro">
-                            <span><i class="fa fa-caret-up" aria-hidden="true"></i></span>
-                            <p>Insira um email válido.</p>
-                        </div>
+                        <input type="email" placeholder="Email" id="email" name="email" />
                     </div>
                     <div class="textarea-mensagem">
                         <textarea
                             name="mensagem"
-                            id="mensage"
+                            id="mensagem"
+                            name="mensagem"
                             placeholder="Mensagem"
-                            class="check-alert"
                         ></textarea>
-                        <button class="cancel">
-                            <i class="fa fa-times-circle" aria-hidden="true"></i>
-                        </button>
-
-                        <div class="mensagem-erro">
-                            <span><i class="fa fa-caret-up" aria-hidden="true"></i></span>
-                            <p>A mensagem deve conter pelo menos 4 palavras e 20 caracteres</p>
-                        </div>
                     </div>
                     <button class="enviar-form">Enviar</button>
                 </form>
