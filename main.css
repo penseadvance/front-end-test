@@ -242,7 +242,7 @@ footer {
     }
 
     main {
-        height: 55vh;
+        height: 91vh;
     }
 
     .container {
@@ -322,11 +322,45 @@ footer {
         background-color: var(--fourth-bg-color);
     }
 
-    .form-contact form > .cancel-name {
-    }
-
     .slide-image img {
         height: 100%;
+    }
+
+    .form-contact form .input-nome .mensagem-erro > span i,
+    .form-contact form .input-email .mensagem-erro > span i,
+    .form-contact form .textarea-mensagem .mensagem-erro > span i {
+        display: none;
+    }
+
+    .form-contact form .input-nome > .mensagem-erro,
+    .form-contact form .input-email > .mensagem-erro,
+    .form-contact form .textarea-mensagem > .mensagem-erro {
+        position: absolute;
+        width: 350px;
+        left: calc(100% + 28px);
+        top: 20px;
+        z-index: 10;
+    }
+
+    .form-contact form .input-nome .mensagem-erro > span,
+    .form-contact form .input-email .mensagem-erro > span,
+    .form-contact form .textarea-mensagem .mensagem-erro > span {
+        width: 0;
+        height: 0;
+        border-top: 30px solid rgb(227, 59, 59);
+        border-left: 25px solid transparent;
+        position: absolute;
+        top: 0px;
+        left: -20px;
+    }
+
+    .form-contact form .input-nome > .mensagem-erro,
+    .form-contact form .input-email > .mensagem-erro,
+    .form-contact form .textarea-mensagem > .mensagem-erro {
+        position: absolute;
+        width: 350px;
+        left: calc(100% + 28px);
+        top: 20px;
     }
 
     footer {
@@ -353,50 +387,5 @@ footer {
 
     .form-contact form > .enviar-form {
         padding: 0.35em;
-    }
-
-    .form-contact form .input-nome > .mensagem-erro,
-    .form-contact form .input-email > .mensagem-erro,
-    .form-contact form .textarea-mensagem > .mensagem-erro {
-        position: absolute;
-        width: 350px;
-        left: 360px;
-        top: 20px;
-        z-index: 10;
-    }
-
-    .form-contact form .input-nome .mensagem-erro > span i,
-    .form-contact form .input-email .mensagem-erro > span i,
-    .form-contact form .textarea-mensagem .mensagem-erro > span i {
-        display: none;
-    }
-
-    .form-contact form .input-nome .mensagem-erro > span,
-    .form-contact form .input-email .mensagem-erro > span,
-    .form-contact form .textarea-mensagem .mensagem-erro > span {
-        width: 0;
-        height: 0;
-        border-top: 30px solid rgb(227, 59, 59);
-        border-left: 25px solid transparent;
-        position: absolute;
-        top: 0px;
-        left: -20px;
-    }
-
-    .form-contact form .input-nome > .mensagem-erro,
-    .form-contact form .input-email > .mensagem-erro,
-    .form-contact form .textarea-mensagem > .mensagem-erro {
-        position: absolute;
-        width: 350px;
-        left: 360px;
-        top: 20px;
-    }
-
-    @media only screen and (min-width: 1440px) {
-        .form-contact form .input-nome > .mensagem-erro,
-        .form-contact form .input-email > .mensagem-erro,
-        .form-contact form .textarea-mensagem > .mensagem-erro {
-            left: 735px;
-        }
     }
 }
