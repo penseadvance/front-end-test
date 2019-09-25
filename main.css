@@ -1,3 +1,89 @@
-h1 {
-    color: purple;
+/* font-family: 'Cookie', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background: url(assets/04-BG.png); 
 }
+
+/* Estilização do Cabeçalho */
+
+header {
+	width: 100%;
+	height: 74px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(172,208,182);
+}
+
+/* Estilização do Texto Principal */
+
+h1 {
+	width: 34%;
+	display: flex;
+	font-family: 'Cookie', cursive;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    text-align-last: center;
+    font-size: 71px;
+    font-weight: normal;
+    margin-left: 9%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+/* Estilização do Formulário*/
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 34%;
+	height: 88%;
+	margin-left: 9%;
+	margin-bottom: 30px;
+}
+
+input {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	padding-left: 10px;
+	margin: 10px 10px 15px 10px;
+	border-radius: 5px;
+	height: 48px;
+	border: 0px;
+}
+
+textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	padding: 10px 0 0 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 0;
+}
+
+input[type = submit]{
+	margin: 15px 10px 15px 10px;
+	margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgb(113, 163, 151);
+    box-shadow: 0 7px 0 rgb(74, 137, 120);
+}
+
+
+
+
+
+
